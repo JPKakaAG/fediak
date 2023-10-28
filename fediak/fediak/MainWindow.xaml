@@ -1,0 +1,30 @@
+﻿<Window x:Class="fediak.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:fediak"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="204*"/>
+            <ColumnDefinition Width="196*"/>
+            <ColumnDefinition Width="199*"/>
+            <ColumnDefinition Width="201*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="112*"/>
+            <RowDefinition Height="105*"/>
+            <RowDefinition Height="108*"/>
+            <RowDefinition Height="109*"/>
+        </Grid.RowDefinitions>
+        <CheckBox x:Name="cb1" Content="Переключатель1" HorizontalAlignment="Center" Margin="0,21,0,0" VerticalAlignment="Top" Grid.Row="1" IsChecked="False"/>
+        <CheckBox x:Name="cb2" Content="Переключатель2" HorizontalAlignment="Center" Margin="0,41,0,0" VerticalAlignment="Top" Grid.Row="1" IsChecked="False"/>
+        <CheckBox x:Name="cb3" Content="Переключатель3" HorizontalAlignment="Center" Margin="0,61,0,0" VerticalAlignment="Top" Grid.Row="1" IsChecked="False"/>
+        <TextBox x:Name="tbLamp" HorizontalAlignment="Left" Margin="24,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" Grid.Row="1" IsReadOnly="True"/>
+        <Label Content="Лампочка" HorizontalAlignment="Left" Margin="51,23,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1"/>
+        <Button x:Name="btnVkl" Click="btnVkl_click" Grid.Column="1" Content="Включатель" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Height="88" Width="176"/>
+
+    </Grid>
+</Window>
